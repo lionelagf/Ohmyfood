@@ -1,0 +1,47 @@
+@import "../base/color";
+
+
+
+.fa-heart {
+
+  position: absolute;
+  bottom: 40px;
+  right: 28px;
+  font-size: 22px;
+  opacity: 1;
+  cursor: pointer;
+  
+   &::after {
+    content: '';
+    font: var(--fa-font-solid);
+    content: '\f004';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: $button-gradient;
+    background-clip: border-box;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 22px;
+    opacity: 0;
+  }
+}
+
+.checkbox_input {
+  display: none;
+}
+.checkbox_input:checked + .fa-heart::after {
+  animation: heart 500ms both cubic-bezier(0.59, 0.68, 0.34, 0.89);
+}
+
+.menu__heart {
+  position: relative;
+  bottom: -30px;
+  right: -135px;
+  @media (min-width: 1024px) {
+    position: relative;
+    right: -80px;
+  }
+}

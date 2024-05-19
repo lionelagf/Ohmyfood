@@ -1,0 +1,22 @@
+$anim-dur: 700ms;
+$anim-delay: $anim-dur / 8;
+
+.card-delay--1 {
+  animation: section both 600ms ease-in-out;
+  opacity: 0;
+}
+
+.card-delay--2 {
+  animation: section both 600ms 200ms ease-in-out;
+  opacity: 0;
+}
+
+.card-delay--3 {
+  animation: section both 600ms 400ms ease-in-out;
+  opacity: 0;
+}
+
+.card-delay--4 {
+  animation: section both 600ms 600ms ease-in-out;
+  opacity: 0;
+}
